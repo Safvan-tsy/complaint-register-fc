@@ -1,0 +1,47 @@
+<section>
+    <div class="container">
+        <div class="col-md-6 col-10 mx-auto">
+            <div class=" row card text-center mt-4">
+
+                <div class="card-body">
+                    <h2 class="card-title">Admin Login</h2>
+                    <div class="row col-md-6  mx-auto mt-3">
+                        <div class="card text-center" style="width: 18rem;">
+                            {{#if loginErr}}
+                            <p class="form-text text-danger">
+                                {{loginErr}}
+                            </p>
+                            {{/if}}
+                          
+                            <div class="card-body">
+                                <form action="/admin/login" method="post">
+                                    <label for="">User ID</label><br>
+                                    <div class="input-group flex-nowrap">
+
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="addon-wrapping" name="username">
+                                    </div><br>
+                                    <label for="">Access Code</label>
+                                    <div class="form-floating">
+
+                                        <input type="password" class="form-control " id="floatingPassword"
+                                            placeholder="Password" name="password" placeholder>
+
+                                    </div><br>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

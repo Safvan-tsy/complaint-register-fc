@@ -1,0 +1,71 @@
+<section>
+
+    <div class="container">
+      <div class=" col-md-6 mt-4 mx-auto">
+        <h1>Register Your Complaint</h1>
+        <form action="/submit" method="post" enctype="" class="mt-4">
+          <div class="mb-3 ">
+            <p>Complainant details</p>
+
+            <label class="form-label">Name :</label>
+            <input type="text" name="name" class="form-control">
+            <div class="form-text">We'll never share your details with anyone else.</div>
+
+          </div>
+          <label class="form-label">Admission number :</label>
+            <input type="text" name="adm_no" class="form-control">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address :</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required="required">
+          </div>
+          Department :
+          <select  name="department" class="form-select  mb-3">
+            <option selected>Select</option>
+            <option>Arabic</option>
+            <option>English</option>
+            <option>Malayalam</option>
+            <option>History</option>
+            <option>Lib.I.Sc</option>
+            <option>Sociology</option>
+            <option>Economics</option>
+            <option>Psychology</option>
+            <option>Zoology</option>
+            <option>Computer Science</option>
+            <option>Chemistry</option>
+            <option>Botony</option>
+            <option>Physics</option>
+            <option>Mathematics</option>
+            <option>Statistics</option>
+            <option>Commerce & Management studies</option>
+            <option>Multimedia</option>
+            <option>Geology</option>
+            <option>Journalism & Mass Communication</option>
+            <option>Vocational Studies</option>
+
+          </select>
+          <p class="mt-4">
+            Compose Your Complaint
+            <br>
+          </p>
+          <label> Subject</label>
+
+          <input type="text" name="subject" class="form-control" name="subject">
+
+          <div class="form-floating mt-3">
+           
+            <textarea class="form-control" placeholder="leave your complaint here.." id="floatingTextarea2" name="complaint" style="height: 100px"></textarea>
+
+          </div>
+
+          <div class="mb-3 form-check">
+            <br>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I hereby declare that the details furnished above are
+              true and correct to the best of my knowledge</label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+  </section>

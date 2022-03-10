@@ -1,0 +1,62 @@
+<section>
+    <div class="container">
+         <a class=" float-end"  href="/" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></a>
+        <div class="col-md-4 mt-4 mx-auto">
+            <h1>Check Your Status</h1>
+            <form action="/check" method="post" enctype="" class="mt-4">
+                <div class="mb-3 ">
+                    {{#if err}}
+                    <p class="form-text text-danger">
+                        Complaint not found !.Try again
+                    </p>
+                    {{/if}}
+                    <p>Complainant details</p>
+
+                    <label class="form-label">Name :</label>
+                    <input type="text" name="name" class="form-control">
+
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address :</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="email" required="required">
+                </div>
+                Department :
+                <select name="department" class="form-select  mb-3" >
+                    <option selected>Select</option>
+                    <option>Arabic</option>
+                    <option>English</option>
+                    <option>Malayalam</option>
+                    <option>History</option>
+                    <option>Lib.I.Sc</option>
+                    <option>Sociology</option>
+                    <option>Economics</option>
+                    <option>Psychology</option>
+                    <option>Zoology</option>
+                    <option>Computer Science</option>
+                    <option>Chemistry</option>
+                    <option>Botony</option>
+                    <option>Physics</option>
+                    <option>Mathematics</option>
+                    <option>Statistics</option>
+                    <option>Commerce & Management studies</option>
+                    <option>Multimedia</option>
+                    <option>Geology</option>
+                    <option>Journalism & Mass Communication</option>
+                    <option>Vocational Studies</option>
+
+                </select>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="Submit">Show My Complaint History</button>
+
+                </div>
+
+        </div>
+        </form>
+    </div>
+    </div>
+</section>
