@@ -1,0 +1,2 @@
+# complaint-register-fc
+The student complaint management system is a web-based platform that allows students to easily submit and track their complaints at college. Staff members can use the system to view and manage the complaints assigned to them. The system aims to improve the transparency and responsiveness of the college's complaint handling process and give students a more convenient way to have their concerns addressed.
