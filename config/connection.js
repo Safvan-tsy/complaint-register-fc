@@ -11,7 +11,7 @@ module.exports.connect = function (done) {
     if (state.db) return done();
 
 
-    const url = 'mongodb+srv://admin:user1234@cluster0.2e3qd.mongodb.net/Register?retryWrites=true&w=majority';
+    const url = 'mongodb+srv://safvan:safvan21@cms.o4hll3z.mongodb.net/?retryWrites=true&w=majority';
 
 // Database Name
     const dbName = 'Register';
